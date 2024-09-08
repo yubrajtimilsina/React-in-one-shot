@@ -1,8 +1,13 @@
+import Navbar from "../../components/Navbar"
 
 
 function EditProduct(){
     return (
-        <h1>edit haha</h1>
+        <>
+        <Navbar/>
+        
+
+        </>
     )
 }
 
