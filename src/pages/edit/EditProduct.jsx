@@ -1,12 +1,15 @@
+import { useParams } from "react-router-dom"
 import Form from "../../components/Form"
 import Navbar from "../../components/Navbar"
-
+import axios from "axios"
+import { useEffect, useState } from "react"
 
 function EditProduct(){
+
     return (
         <>
         <Navbar/>
-        <Form type='edit' />
+        <Form type='edit' id={id} />
 
         </>
     )
