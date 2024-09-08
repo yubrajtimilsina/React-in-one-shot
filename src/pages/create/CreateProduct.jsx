@@ -6,7 +6,7 @@ function CreateProduct(){
     return (
         <>
         <Navbar/>
-        <Form />
+        <Form type='create'/>
 
         </>
     )
