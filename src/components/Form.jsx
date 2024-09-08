@@ -1,6 +1,6 @@
 
 
-function Form({type}){
+function Form({type,id}){
     return (
         <div class="bg-white border-4 rounded-lg shadow relative m-10">
 
