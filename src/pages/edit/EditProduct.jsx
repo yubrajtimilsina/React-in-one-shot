@@ -5,6 +5,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 
 function EditProduct(){
+    const {id} = useParams()
 
     return (
         <>

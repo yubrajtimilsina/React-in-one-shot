@@ -6,7 +6,7 @@ function Form({type,id}){
     const navigate = useNavigate()
     const [data,setData] = useState({})
     const fetchProduct = async()=>{
-        const response = await axios.get("https://66dc84a447d749b72acbc6e6.mockapi.io/products/" + id)
+        const response = await axios.get("https://66dd6c30f7bcc0bbdcde1022.mockapi.io/products/" + id)
         if(response.status === 200){
             setData(response.data)
         }
@@ -30,14 +30,14 @@ function Form({type,id}){
     const createProduct  = async (e)=>{
         e.preventDefault()
         if(type === "create"){
-            const response = await axios.post("https://66dc84a447d749b72acbc6e6.mockapi.io/products",data)
+            const response = await axios.post("https://66dd6c30f7bcc0bbdcde1022.mockapi.io/products",data)
             if(response.status === 201){
                 navigate("/")
             }else{
                 alert("Create vayena, error aayo!")
             }
         }else{
-            const response = await axios.put("https://66dc84a447d749b72acbc6e6.mockapi.io/products/" +id,data)
+            const response = await axios.put("https://66dd6c30f7bcc0bbdcde1022.mockapi.io/products/" +id,data)
             if(response.status=== 200){
                 navigate("/product/"+id)
             }else{
